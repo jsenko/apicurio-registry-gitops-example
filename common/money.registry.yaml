@@ -1,13 +1,13 @@
 $type: artifact-v0
 registryIds: [prod, staging]
 groupId: common
-artifactId: address
+artifactId: money
 artifactType: JSON
-name: Address
-description: Physical mailing address
+name: Money
+description: Monetary amount with currency
 createdOn: "2024-01-10"
 versions:
   - version: "1.0.0"
     state: ENABLED
     createdOn: "2024-01-10"
-    content: ./address.json
+    content: ./money.json
