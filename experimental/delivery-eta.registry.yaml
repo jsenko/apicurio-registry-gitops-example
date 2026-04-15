@@ -1,0 +1,14 @@
+$type: artifact-v0
+registryIds: [staging]
+groupId: experimental
+artifactId: delivery-eta
+artifactType: JSON
+name: Delivery ETA Prediction
+description: ML model output schema for estimated delivery time
+createdOn: "2024-09-15"
+versions:
+  - version: "0.1.0"
+    state: DRAFT
+    description: Initial draft — under evaluation
+    createdOn: "2024-09-15"
+    content: ./delivery-eta-v1.json

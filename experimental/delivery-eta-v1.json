@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DeliveryETA",
+  "description": "Estimated delivery time prediction from the ML model",
+  "type": "object",
+  "properties": {
+    "shipmentId": {
+      "type": "string",
+      "description": "The shipment being predicted"
+    },
+    "estimatedDelivery": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Predicted delivery timestamp"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Model confidence score"
+    },
+    "modelVersion": {
+      "type": "string",
+      "description": "Version of the ML model used"
+    }
+  },
+  "required": ["shipmentId", "estimatedDelivery", "confidence"]
+}

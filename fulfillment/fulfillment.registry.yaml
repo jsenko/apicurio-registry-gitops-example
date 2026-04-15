@@ -1,0 +1,7 @@
+$type: group-v0
+registryIds: [prod, staging]
+groupId: fulfillment
+description: Fulfillment service schemas
+labels:
+  team: fulfillment
+  domain: logistics

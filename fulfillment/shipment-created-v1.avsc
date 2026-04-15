@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ShipmentCreated",
+  "namespace": "com.example.fulfillment",
+  "doc": "Event emitted when a shipment is created for an order",
+  "fields": [
+    {"name": "shipmentId", "type": "string", "doc": "Unique shipment identifier"},
+    {"name": "orderId", "type": "string", "doc": "Reference to the originating order"},
+    {"name": "carrier", "type": "string", "doc": "Shipping carrier name"},
+    {"name": "trackingNumber", "type": ["null", "string"], "default": null, "doc": "Carrier tracking number"},
+    {"name": "createdAt", "type": {"type": "long", "logicalType": "timestamp-millis"}, "doc": "When the shipment was created"}
+  ]
+}

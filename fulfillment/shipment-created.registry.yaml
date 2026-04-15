@@ -1,0 +1,17 @@
+$type: artifact-v0
+registryIds: [prod, staging]
+groupId: fulfillment
+artifactId: shipment-created
+artifactType: AVRO
+name: Shipment Created Event
+description: Event emitted when a shipment is created for an order
+createdOn: "2024-03-01"
+rules:
+  - ruleType: COMPATIBILITY
+    config: BACKWARD
+versions:
+  - version: "1.0.0"
+    state: ENABLED
+    description: Initial version
+    createdOn: "2024-03-01"
+    content: ./shipment-created-v1.avsc
