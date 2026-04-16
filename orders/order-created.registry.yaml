@@ -1,13 +1,13 @@
 $type: artifact-v0
 registryIds: [prod, staging]
-groupId: payments
+groupId: orders
 artifactId: order-created
 artifactType: AVRO
 name: Order Created Event
-description: Event emitted when a new order is created
+description: Event emitted when a new order is placed
+createdOn: "2024-01-15"
 labels:
   event-type: domain-event
-  bounded-context: orders
 rules:
   - ruleType: COMPATIBILITY
     config: BACKWARD
@@ -15,8 +15,10 @@ versions:
   - version: "1.0.0"
     state: ENABLED
     description: Initial version
+    createdOn: "2024-01-15"
     content: ./order-created-v1.avsc
   - version: "2.0.0"
     state: ENABLED
     description: Added customer email field
+    createdOn: "2024-06-01"
     content: ./order-created-v2.avsc
