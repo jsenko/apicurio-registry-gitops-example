@@ -8,6 +8,6 @@ description: Monetary amount with currency
 createdOn: "2024-01-10"
 versions:
   - version: "1.0.0"
-    state: BLAH
+    state: ENABLED
     createdOn: "2024-01-10"
     content: ./money.json
